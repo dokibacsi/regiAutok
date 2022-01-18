@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+
+main{
+    display: grid;
+    grid-template-areas: "H H H H"
+                         "N N N N"
+                         "AR AR AR AS"
+                         "FO FO FO FO";
+    max-width: 1100px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+header{
+    grid-area: H;
+    color: #008768;
+    margin-left: 20px;
+}
+
+nav{
+    grid-area: N;
+    background-color:#008768;
+    color: #60C9BE;
+}
+
+nav li{
+    list-style-type: none;
+    max-width: 300px;
+    display: inline;
+}
+
+nav ul li{
+    margin: 5px;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: #60C9BE
+}
+
+article{
+    padding-top: 10px;
+    width: 770px;
+    grid-gap: 20px;
+}
+
+article ol li{
+    list-style-type: decimal;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+article h3{
+    color: #008768;
+    background-color: #F7F7F4;
+    padding: 10px;
+    margin-top: 0;
+    border: 1px solid lightgray;
+}
+
+table{
+    width: 700px;
+}
+
+table tr td{
+    padding-left: 100px;
+    text-align: center;
+}
+
+.kulsobar{
+    border: 1px solid lightgray;
+    margin-top: 0;
+}
+
+.belsobar img{
+    border: 1px solid lightgray;
+
+}
+
+aside{
+    grid-area: AS;
+    max-width: 300px;
+}
+
+footer{
+    grid-area: FO;
+    color: #008768;
+    text-align: center;
+}
+
